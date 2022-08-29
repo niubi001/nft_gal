@@ -107,6 +107,8 @@ const Home = () => {
               "disabled:bg-slate-500 text-white bg-blue-400 px-4 py-2 mt-3 rounded-sm w-1/5"
             }
             onClick={() => {
+              puid = undefined;
+              setDisabled("disabled");
               if (fetchForCollection) {
                 fetchNFTsForCollection();
               } else fetchNFTs();
