@@ -1,6 +1,6 @@
 import datacopy from "../public/images/datacopy.png";
 
-const NFTCard = ({ nft }) => {
+export default NFTCard = ({ nft }) => {
   const fcopy = () => {
     var copyText = nft.contract.address;
     navigator.clipboard.writeText(copyText);
@@ -41,5 +41,3 @@ const NFTCard = ({ nft }) => {
     </div>
   );
 };
-
-export default NFTCard;
