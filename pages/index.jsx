@@ -1,4 +1,4 @@
-import { NFTCard } from "./nftCard";
+import { NFTCard } from "../public/nftCard";
 import { useState } from "react";
 import arrow from "../public/images/right-arrow.png";
 
