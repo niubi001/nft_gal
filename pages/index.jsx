@@ -133,8 +133,24 @@ const Home = () => {
           type={"text"}
           placeholder="Add the collection address"
         ></input>
+        <button
+          onClick={() => {
+            setCollectionAddress("0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d");
+            collection = "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d";
+            console.log(collection);
+            if (fetchForCollection === false) {
+              document.getElementById("c1").click();
+            }
+            puid = undefined;
+            setDisabled("disabled");
+            fetchNFTsForCollection();
+          }}
+        >
+          Bored Ape Yacht Club
+        </button>
         <label className="text-gray-600 ">
           <input
+            id="c1"
             onChange={(e) => {
               setFetchForCollection(e.target.checked);
             }}
